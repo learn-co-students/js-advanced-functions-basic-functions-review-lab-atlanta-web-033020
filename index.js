@@ -21,9 +21,5 @@ const Calculator = {
 };
 
 function actionApplyer(start, arr) {
-  if (arr.length === 0) {
-    return start;
-  } else {
-    return arr.reduce((result, element) => element(result), start)
-  }
+  return arr.reduce((result, element) => element(result), start)
 }
